@@ -1,0 +1,128 @@
+{
+  "T-01": {
+    "name": "Wireless Spoof \u2192 CAN Injection",
+    "description": "Attacker spoofs legitimate GCS wireless command and injects forged CAN frame via compromised gateway.",
+    "metrics": {
+      "AV": "N",
+      "AC": "L",
+      "PR": "N",
+      "UI": "N",
+      "S": "C",
+      "C": "H",
+      "I": "H",
+      "A": "H"
+    },
+    "justification": "Maximum severity: network-accessible, no privileges, changed scope (wireless\u2192CAN), full CIA impact.",
+    "cvss_score": 10,
+    "severity": "Critical",
+    "vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:C/C:H/I:H/A:H",
+    "impact_subscore": 6.048,
+    "exploitability_subscore": 3.887,
+    "iss": 0.915
+  },
+  "T-02": {
+    "name": "RF Jamming \u2192 Control Loss",
+    "description": "Attacker jams RF link between GCS and ROED, causing loss of operator control.",
+    "metrics": {
+      "AV": "N",
+      "AC": "L",
+      "PR": "N",
+      "UI": "N",
+      "S": "U",
+      "C": "N",
+      "I": "N",
+      "A": "H"
+    },
+    "justification": "Availability-only impact. No scope change (wireless layer only). Medium severity.",
+    "cvss_score": 7.5,
+    "severity": "High",
+    "vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N/A:H",
+    "impact_subscore": 3.595,
+    "exploitability_subscore": 3.887,
+    "iss": 0.56
+  },
+  "T-03": {
+    "name": "Gateway Exploit \u2192 Bus Takeover",
+    "description": "Attacker exploits gateway firmware vulnerability to gain full CAN bus access.",
+    "metrics": {
+      "AV": "N",
+      "AC": "H",
+      "PR": "H",
+      "UI": "N",
+      "S": "C",
+      "C": "H",
+      "I": "H",
+      "A": "H"
+    },
+    "justification": "High complexity and privilege requirements offset by changed scope and full CIA impact.",
+    "cvss_score": 7.9,
+    "severity": "High",
+    "vector": "CVSS:3.1/AV:N/AC:H/PR:H/UI:N/S:C/C:H/I:H/A:H",
+    "impact_subscore": 6.048,
+    "exploitability_subscore": 1.307,
+    "iss": 0.915
+  },
+  "T-04": {
+    "name": "CAN Replay \u2192 Actuator Trigger",
+    "description": "Attacker replays captured legitimate CAN frames to trigger unintended actuator behavior.",
+    "metrics": {
+      "AV": "L",
+      "AC": "L",
+      "PR": "N",
+      "UI": "N",
+      "S": "U",
+      "C": "N",
+      "I": "H",
+      "A": "N"
+    },
+    "justification": "Local access required, but no authentication on CAN. Integrity-only impact. Medium severity.",
+    "cvss_score": 6.1,
+    "severity": "Medium",
+    "vector": "CVSS:3.1/AV:L/AC:L/PR:N/UI:N/S:U/C:N/I:H/A:N",
+    "impact_subscore": 3.595,
+    "exploitability_subscore": 2.515,
+    "iss": 0.56
+  },
+  "T-05": {
+    "name": "Telemetry Eavesdropping",
+    "description": "Attacker passively intercepts wireless telemetry data from ROED to GCS.",
+    "metrics": {
+      "AV": "N",
+      "AC": "L",
+      "PR": "N",
+      "UI": "N",
+      "S": "U",
+      "C": "H",
+      "I": "N",
+      "A": "N"
+    },
+    "justification": "Passive attack with high confidentiality impact but no integrity/availability effects.",
+    "cvss_score": 7.5,
+    "severity": "High",
+    "vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:N/A:N",
+    "impact_subscore": 3.595,
+    "exploitability_subscore": 3.887,
+    "iss": 0.56
+  },
+  "T-06": {
+    "name": "CAN Bus Flooding (DoS)",
+    "description": "Attacker floods CAN bus with high-rate frames, causing ECU unresponsiveness.",
+    "metrics": {
+      "AV": "L",
+      "AC": "L",
+      "PR": "N",
+      "UI": "N",
+      "S": "U",
+      "C": "N",
+      "I": "N",
+      "A": "H"
+    },
+    "justification": "Local access required. Availability-only impact. Medium severity.",
+    "cvss_score": 6.1,
+    "severity": "Medium",
+    "vector": "CVSS:3.1/AV:L/AC:L/PR:N/UI:N/S:U/C:N/I:N/A:H",
+    "impact_subscore": 3.595,
+    "exploitability_subscore": 2.515,
+    "iss": 0.56
+  }
+}

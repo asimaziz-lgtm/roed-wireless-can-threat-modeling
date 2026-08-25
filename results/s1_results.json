@@ -1,0 +1,54 @@
+{
+  "overall": {
+    "accuracy": 0.8956,
+    "detection_rate": 0.8381,
+    "fpr": 0.0976,
+    "roc_auc": 0.931,
+    "tp": 699,
+    "tn": 6318,
+    "fp": 683,
+    "fn": 135
+  },
+  "per_attack": {
+    "T-01": {
+      "detection_rate": 1.0,
+      "n_test": 187
+    },
+    "T-02": {
+      "detection_rate": 0.42342342342342343,
+      "n_test": 111
+    },
+    "T-03": {
+      "detection_rate": 0.9435897435897436,
+      "n_test": 195
+    },
+    "T-04": {
+      "detection_rate": 0.5333333333333333,
+      "n_test": 120
+    },
+    "T-06": {
+      "detection_rate": 0.9819004524886877,
+      "n_test": 221
+    }
+  },
+  "feature_importance": {
+    "can_id": 0.002138,
+    "dlc": 0.004349,
+    "inter_arrival": 0.116682,
+    "payload_len": 0.014008,
+    "payload_zscore": 0.012328,
+    "ia_zscore": 0.015108,
+    "id_mismatch": 0.0,
+    "out_of_range": 0.015476
+  },
+  "statistical_tests": {
+    "chi2": {
+      "statistic": 2808.3,
+      "p_value": "0.00e+00"
+    },
+    "z_test_fpr": {
+      "statistic": 18.26,
+      "p_value": "0.00e+00"
+    }
+  }
+}

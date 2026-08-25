@@ -1,0 +1,66 @@
+{
+  "S2-IF": {
+    "accuracy": 0.9682,
+    "detection_rate": 1.0,
+    "fpr": 0.041,
+    "roc_auc": 1.0,
+    "tp": 35,
+    "tn": 117,
+    "fp": 5,
+    "fn": 0,
+    "per_attack": {
+      "T-01": {
+        "detection_rate": 0,
+        "n_test": 70
+      },
+      "T-02": {
+        "detection_rate": 0,
+        "n_test": 26
+      },
+      "T-03": {
+        "detection_rate": 1.0,
+        "n_test": 25
+      },
+      "T-04": {
+        "detection_rate": 0,
+        "n_test": 23
+      },
+      "T-06": {
+        "detection_rate": 1.0,
+        "n_test": 13
+      }
+    }
+  },
+  "S2-SVM": {
+    "accuracy": 0.7452,
+    "detection_rate": 0.3429,
+    "fpr": 0.1393,
+    "roc_auc": 0.7379,
+    "tp": 12,
+    "tn": 105,
+    "fp": 17,
+    "fn": 23,
+    "per_attack": {
+      "T-01": {
+        "detection_rate": 0,
+        "n_test": 70
+      },
+      "T-02": {
+        "detection_rate": 0,
+        "n_test": 26
+      },
+      "T-03": {
+        "detection_rate": 0.18181818181818182,
+        "n_test": 25
+      },
+      "T-04": {
+        "detection_rate": 0,
+        "n_test": 23
+      },
+      "T-06": {
+        "detection_rate": 0.6153846153846154,
+        "n_test": 13
+      }
+    }
+  }
+}
